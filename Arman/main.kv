@@ -1,0 +1,85 @@
+#:kivy 1.9.1
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+BoxLayout:
+	orientation: 'vertical'
+	canvas.before:
+        Color:
+            rgba: (0.2, 0.2, 0.2, .6)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	FloatLayout:
+		Label:
+			text: 'FloatLayout'
+			size_hint: (1, .10)
+			pos_hint: {'top': 1}
+			canvas.before:
+	    	    Color:
+	    	        rgba: (.4, 0.2, 0.4, .6)
+	    	    Rectangle:
+	    	        size: self.size
+	    	        pos: self.pos
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .20)","pos_hint: {'top':.5, 'right': 1}")
+			font_size: self.height*.10
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .20)
+			pos_hint: {'top':.5, 'right': 1}
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .40)","pos_hint: {'top':.5, 'right': .5}")
+			font_size: self.height*.07
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .40)
+			pos_hint: {'top':.5, 'right': .5}
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .10)","pos_hint: {'left':1, 'top': .90}")
+			font_size: self.height*.20
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .10)
+			pos_hint: {'left':1, 'top': .90}
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .10)","pos_hint: {'right':.50, 'top': .90}")
+			font_size: self.height*.20
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .10)
+			pos_hint: {'right':.50, 'top': .90}			
+
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .10)","pos_hint: {'right':.50, 'top': .80}")
+			font_size: self.height*.20
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .10)
+			pos_hint: {'right':.50, 'top': .80}	
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .10)","pos_hint: {'right':.75, 'top': .90}")
+			font_size: self.height*.20
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .10)
+			pos_hint: {'right':.75, 'top': .90}	
+
+		Button:
+			text: "{}\n{}".format("size_hint: (.20, .20)","pos_hint: {'left':1, 'bottom': 1}")
+			font_size: self.height*.10
+    		text_size: self.size
+    		valign: 'middle'
+    		halign: 'center'
+			size_hint: (.20, .20)
+			pos_hint: {'left':1, 'bottom': 1}	
